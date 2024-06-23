@@ -33,3 +33,6 @@ Change the mapping how you wish; I have not checked it against the real tandy 60
 
 ## CCR-81
 3D printed battery cover replacement for CCR-81 / CCR-81A Cassette Tape Recorder
+
+## model 4 floppy drive faceplate
+I wanted to add a Gotek to my model 4 without sacrificing one of the existing full-height drives. Luckily, there is a lot of room behind the drive's faceplate to put the Gotek's screen, buttons, and USB port. The toggle switch swaps the drive address between the real floppy and Gotek, with one as :0 and the other as :2, or vice versa. To make this work, you will also need to modify your floppy controller board to bring *DS2 signal from the external drive connector on the bottom of the machine to internal floppy cable pin 14, and also disconnect the DS2 (non inverted version) from the OR gate that makes the controller electronics use the external drive connector when DS2 or DS3 is used (connect the lifted OR pin to DS3 instead).
